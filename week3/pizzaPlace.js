@@ -17,14 +17,20 @@ function greetCustomer() {
 greetCustomer();
 
 function getPizzaOrder(size, crust, ...toppings) {
-  console.log(
-    `one ${size} ${crust} crust pizza with ${toppings} ... coming up!`
-  );
+  let message =`one ${size} ${crust} crust pizza with `
+  for (let topping of toppings) {
+    message += `${topping}`
+  }
+  console.log(message);
+
+
+
+  return [size, crust, toppings]
 }
 
 getPizzaOrder("large", "thin", "bacon", "pepperoni");
 
-function preparePizza(size, crust, pepperoni, bacon, sausage) {
+function preparePizza([size, crust, toppings]) {
   console.log("...pizza size...");
 
   return{
