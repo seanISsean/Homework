@@ -1,0 +1,28 @@
+d*{
+  border: 2px solid blue;
+  background-color: aliceblue
+  color: black;
+
+}
+div {
+  padding: 10px;
+
+  margin: 30px;
+}
+
+.webdevelopment{
+  padding: 10px;
+  margin: 30px;
+  color: red
+}
+
+#image{
+  padding: 20px;
+  margin-top: 15px;
+}
+
+body > div{
+border: 2px solid purple;
+background-color: burlywood;
+color: aquamarine
+}
